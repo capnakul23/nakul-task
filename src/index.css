@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Paper & Ink palette */
+    --background: 42 27% 95%;          /* #f5f3ee paper */
+    --foreground: 0 0% 8%;             /* #141414 ink */
+
+    --card: 40 22% 97%;
+    --card-foreground: 0 0% 8%;
+
+    --popover: 40 22% 97%;
+    --popover-foreground: 0 0% 8%;
+
+    --primary: 0 0% 5%;                /* #0d0d0d deep ink */
+    --primary-foreground: 42 27% 95%;
+
+    --secondary: 38 19% 90%;           /* #e8e4dd */
+    --secondary-foreground: 0 0% 18%;
+
+    --muted: 38 19% 90%;
+    --muted-foreground: 0 0% 38%;
+
+    --accent: 0 0% 18%;                /* #2d2d2d charcoal accent */
+    --accent-foreground: 42 27% 95%;
+
+    --destructive: 14 65% 42%;
+    --destructive-foreground: 42 27% 95%;
+
+    --border: 38 14% 82%;
+    --input: 38 14% 82%;
+    --ring: 0 0% 8%;
+
+    --radius: 0.25rem;
+
+    /* Status accents (subtle) */
+    --status-todo: 38 14% 70%;
+    --status-progress: 35 75% 50%;
+    --status-done: 145 35% 38%;
+
+    --priority-low: 145 25% 45%;
+    --priority-medium: 35 70% 45%;
+    --priority-high: 14 70% 45%;
+
+    /* Editorial shadows */
+    --shadow-paper: 0 1px 0 0 hsl(0 0% 0% / 0.04), 0 8px 24px -12px hsl(0 0% 0% / 0.12);
+    --shadow-ink: 0 2px 0 0 hsl(0 0% 5%);
+  }
+
+  * { @apply border-border; }
+
+  html { font-feature-settings: "ss01", "cv11"; }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    background-image:
+      radial-gradient(hsl(0 0% 0% / 0.025) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    @apply tracking-tight;
+  }
+}
+
+@layer components {
+  .display {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    @apply tracking-tight font-semibold;
+  }
+  .rule {
+    @apply h-px w-full bg-foreground/15;
+  }
+  .editorial-card {
+    @apply bg-card border border-border/80;
+    box-shadow: var(--shadow-paper);
+  }
+  .ink-button {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 transition-colors;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1.5 px-2 py-0.5 text-[11px] font-medium uppercase tracking-wider border border-border bg-background/60 rounded-sm;
+  }
+}
