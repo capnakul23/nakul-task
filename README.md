@@ -1,7 +1,3 @@
-# Welcome to your Task Manager project
-
-TODO: Document your project here
-
 ---------------------------------------------------------
 # TaskFlow — Team Task Manager
 
