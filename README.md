@@ -5,8 +5,8 @@ A full-stack project & task management web app with role-based access
 control, Kanban workflows, and real-time dashboards — built for teams to
 collaborate efficiently.
 
-Live Demo: https://nakul-task.up.railway.app GitHub Repo:
-https://github.com/capnakul23/nakul-task
+Live Demo: https://nakul-task.up.railway.app 
+GitHub Repo:https://github.com/capnakul23/nakul-task
 
 ------------------------------------------------------------------------
 
