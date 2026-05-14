@@ -74,8 +74,8 @@ export default function AuthPage() {
         <div className="relative space-y-6">
           <h1 className="display text-5xl xl:text-6xl leading-[0.95]">
             Make work<br/>
-            <span className="italic font-normal">Elegible.</span>
-            <span className="italic font-normal">Nakul.</span>
+            <span className="italic font-normal">Elegible </span>
+            <span className="italic font-normal">By Nakul.</span>
           </h1>
           <div className="rule bg-primary-foreground/30" />
           <p className="text-sm opacity-70 max-w-sm leading-relaxed">
