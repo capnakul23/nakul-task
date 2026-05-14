@@ -73,7 +73,7 @@ export default function AuthPage() {
         </div>
         <div className="relative space-y-6">
           <h1 className="display text-5xl xl:text-6xl leading-[0.95]">
-            Make work<br/>
+            Make work<br />
             <span className="italic font-normal">Elegible </span>
             <span className="italic font-normal">By Nakul.</span>
           </h1>
@@ -98,6 +98,13 @@ export default function AuthPage() {
             </h2>
           </div>
           <div className="rule" />
+          {mode === "login" && (
+            <div className="p-3 bg-muted/30 border rounded-sm text-xs text-muted-foreground font-mono mb-2">
+              <p className="font-sans font-medium text-foreground mb-1">Demo Account</p>
+              <p>Email: <span className="select-all text-foreground">demo@inkboard.com</span></p>
+              <p>Pass:  <span className="select-all text-foreground">password123</span></p>
+            </div>
+          )}
           <div className="space-y-4">
             {mode === "signup" && (
               <div className="space-y-1.5">
