@@ -102,7 +102,7 @@ export default function AuthPage() {
             <div className="p-3 bg-muted/30 border rounded-sm text-xs text-muted-foreground font-mono mb-2">
               <p className="font-sans font-medium text-foreground mb-1">Demo Account</p>
               <p>Email: <span className="select-all text-foreground">demo@inkboard.com</span></p>
-              <p>Pass:  <span className="select-all text-foreground">password123</span></p>
+              <p>Pass:  <span className="select-all text-foreground">password@123</span></p>
             </div>
           )}
           <div className="space-y-4">
